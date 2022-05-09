@@ -1,9 +1,8 @@
-import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
-import { ProtectedRoutingModule } from './protected-routing.module';
 import { DashboardComponent } from './dashboard/dashboard.component';
-
+import { HttpClientModule } from '@angular/common/http';
+import { NgModule } from '@angular/core';
+import { ProtectedRoutingModule } from './protected-routing.module';
 
 @NgModule({
   declarations: [
@@ -11,7 +10,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
   ],
   imports: [
     CommonModule,
-    ProtectedRoutingModule
+    ProtectedRoutingModule,
+    HttpClientModule
   ]
 })
 export class ProtectedModule { }
